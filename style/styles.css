@@ -31,8 +31,9 @@
 body {
     min-height: 100vh;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif;
     padding-bottom: 80px;
+    background-color: var(--bg-main);
 }
 
 img {
@@ -40,7 +41,6 @@ img {
 }
 
 header {
-    border-bottom: 3px solid #000;
     padding: 15px;
     margin-bottom: 1rem;
     background-color: var(--header-footer);
@@ -64,8 +64,20 @@ header {
 
 .card {
     width: 50%;
-    border: 3px solid #000;
+    border: 1px solid rgba(26, 54, 93, 0.1);
+    border-radius: 15px;
+    /*Ombra a due strati */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     padding: 1rem;
+    background-color: var(--bg-card);
+}
+
+h2 {
+    color: var(--names);
+}
+
+p {
+    color: var(--lorem);
 }
 
 footer {
@@ -107,6 +119,7 @@ footer {
 
 .avatar {
     height: 5em;
+    border: 0.25em solid var(--header-footer);
     border-radius: 50%;
 }
 
