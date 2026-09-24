@@ -66,7 +66,7 @@ header {
 }
 
 .card {
-    width: 50%;
+    max-width: 40%;
     border: 1px solid rgba(26, 54, 93, 0.1);
     border-radius: 15px;
     /*Ombra a due strati */
@@ -77,7 +77,7 @@ header {
 
 .card p {
     color: var(--lorem);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: 0.75rem;
 }
@@ -97,8 +97,6 @@ footer {
     border-top-left-radius: 15px;
     font-size: 1.3rem;
     font-weight: 500;
-
-
 }
 
 .logo-inline {
@@ -144,4 +142,38 @@ footer {
 
 #avatar-4 {
     background-color: var(--bg-avatar-4);
+}
+
+/* Media Queries */
+
+@media (max-width:600px) {
+    header {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 1rem;
+        bottom: -1px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 100%;
+        min-width: 80%;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+
+    }
+
+    .user {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
